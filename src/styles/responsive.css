@@ -1,0 +1,271 @@
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+
+  .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .movies {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .movie {
+    grid-template-columns: auto 1fr;
+  }
+
+  .movie__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .movie__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar__brand h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .movies {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .card-fav {
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-fav {
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-fav {
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+  }
+
+  .card-fav .card-title a {
+    font-size: 1rem;
+  }
+
+  .card-fav .rating {
+    font-size: 1rem;
+  }
+
+  .card-fav .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resto {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .content__heading {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-title a {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: 40%;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #776B5D;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+
+  .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+
+  .card-detail, .card-detail-rev {
+    margin: 0;
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-detail {
+    width: 48%;
+  }
+
+  .card-detail-rev {
+    width: 100%; 
+    max-width: 1136px; 
+  }
+}
+
+@media (min-width: 1440px) {
+  .card-detail {
+    width: 32%; 
+  }
+}
+@media (max-width: 768px) {
+  .card-detail, .card-detail-rev {
+    max-width: 100%;
+    margin: 12px 0; 
+  }
+
+  .menu {
+    display: block;
+  }
+}
